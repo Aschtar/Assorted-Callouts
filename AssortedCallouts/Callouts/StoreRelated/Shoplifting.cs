@@ -396,7 +396,7 @@ namespace AssortedCallouts.Callouts.StoreRelated
                             if (ent.Exists() && DeletingNearbyEntities && CalloutRunning)
                             {
                                 Ped ped = (Ped)ent;
-                                if (!RelatedEntities.Contains(ent) && ent.Model != new Model("S_M_M_PARAMEDIC_01") && ped.RelationshipGroup != "COP")
+                                if (!RelatedEntities.Contains(ent) && ent.Model != new Model("MP_M_FREEMODE_01") && ped.RelationshipGroup != "COP")
                                 {
                                     if (NativeFunction.Natives.GET_INTERIOR_FROM_ENTITY<int>( ent) != 0)
                                     {

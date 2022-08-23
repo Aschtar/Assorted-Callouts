@@ -55,6 +55,7 @@ namespace AssortedCallouts
         {
             List<dynamic> RegisteredCalloutNames = new List<dynamic>();
             Game.LogTrivial("Adding callout names! ");
+            /*
             foreach (Callout callout in ScriptComponent.GetAllByType<Callout>())
             {
 
@@ -62,6 +63,7 @@ namespace AssortedCallouts
                 RegisteredCalloutNames.Add(callout.ScriptInfo.Name);
 
             }
+            */
             return RegisteredCalloutNames;
         }
 

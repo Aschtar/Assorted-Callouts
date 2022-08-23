@@ -29,9 +29,6 @@ namespace AssortedCallouts.Callouts.StoreRelated
         private Vehicle EscapeVan;
         private Ped EscapeVanDriver;
         
-        
-
-
         public override bool OnBeforeCalloutDisplayed()
         {
             Game.LogTrivial("Creating AssortedCallouts.StoreRobbery");
@@ -57,7 +54,6 @@ namespace AssortedCallouts.Callouts.StoreRelated
 
         public override bool OnCalloutAccepted()
         {
-            
             SearchArea = new Blip(SpawnPoint);
             SearchArea.Color = System.Drawing.Color.Yellow;
             SearchArea.IsRouteEnabled = true;
